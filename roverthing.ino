@@ -1,14 +1,12 @@
 
 //defines pin numbers
-int ENA = ;
-int ENB = ;
+int ENA = 3;
+int ENB = 5;
 
-int IN1 = ;
-int IN2 = ; 
-int IN3 = ;
-int IN4 = ; 
-
-
+int IN1 = 8;
+int IN2 = 9; 
+int IN3 = 10;
+int IN4 = 11; 
 
 void setup() {
 
@@ -26,8 +24,8 @@ void setup() {
 
 void loop() {
 //sets the speed of the motor to the MAXXXXX
-  analogwrite(ENA, 255);
-  analogwrite(ENB, 255);
+  analogWrite(ENA, 255);
+  analogWrite(ENB, 255);
 
 //gets both motors in the foward moving position
   digitalWrite(IN1, HIGH);
